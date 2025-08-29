@@ -24,3 +24,4 @@ This project currently focuses on building the structure of the board and will b
 *(Add a screenshot of your board here once available)*
 
 ---
+<img width="827" height="846" alt="Image" src="https://github.com/user-attachments/assets/b14f668a-bfd9-473c-b2ee-c0798a80b1f9" />
