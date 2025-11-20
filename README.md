@@ -111,4 +111,4 @@ This marks a major milestone in transforming the board from a layout-only struct
 
 ## 📷 Screenshot
 ---
-<img width="827" height="846" alt="Image" src="https://github.com/user-attachments/assets/b14f668a-bfd9-473c-b2ee-c0798a80b1f9" />
+<img width="1906" height="1006" alt="Image" src="https://github.com/user-attachments/assets/00e761e5-79a7-409a-a2e3-9871d4f807d6" />
