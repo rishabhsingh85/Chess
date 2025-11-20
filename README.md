@@ -9,56 +9,56 @@ Players can now move pieces, capture opponents, track turns, and view captured p
 This marks a major milestone in transforming the board from a layout-only structure to a dynamic chess engine prototype.
 
 ## 🛠️ Tech Used
-HTML – structure & board layout
+• HTML – structure & board layout
 
-CSS – board styling, highlighting, and UI aesthetics
+• CSS – board styling, highlighting, and UI aesthetics
 
-JavaScript – piece movement, turn system, capture logic
+• JavaScript – piece movement, turn system, capture logic
 
 ## 🚀 Features
 ✔ Interactive Piece Movement
 
-Click-to-select and click-to-move system
+• Click-to-select and click-to-move system
 
-Legal cells highlight
+• Legal cells highlight
 
-Capture cells shown in red outline
+• Capture cells shown in red outline
 
-Selected piece shown with blue outline
+• Selected piece shown with blue outline
 
 ✔ Turn-Based Gameplay
 
-Game enforces alternate turns
+• Game enforces alternate turns
 
-White moves first
+• White moves first
 
-After each move, the turn switches automatically
+• After each move, the turn switches automatically
 
-No player can move twice in a row
+• No player can move twice in a row
 
 ✔ Capture System Implemented
 
-When a piece is captured, it is removed from the board
+• When a piece is captured, it is removed from the board
 
-Captured pieces appear in dedicated UI boxes:
+• Captured pieces appear in dedicated UI boxes:
 
-Black Captured (left top corner)
+• Black Captured (left top corner)
 
-White Captured (right top corner)
+• White Captured (right top corner)
 
-Captured pieces shrink to 40×40 for compact display
+• Captured pieces shrink to 40×40 for compact display
 
 ✔ Player Feedback (Live Game Info)
 
-“Turn: White / Black” displayed at top center
+• “Turn: White / Black” displayed at top center
 
-Updates instantly after every valid move
+• Updates instantly after every valid move
 
 ✔ Game-Over (King Capture Detection)
 
-When the King is captured, the game stops
+• When the King is captured, the game stops
 
-Message displayed:
+• Message displayed:
 
 “Checkmate – White Wins” or
 
@@ -68,11 +68,11 @@ Message displayed:
 
 ✔ Aesthetic UI Improvements
 
-Applied a premium dark gradient background
+• Applied a premium dark gradient background
 
-Board positioned lower so top HUD is clearly visible
+• Board positioned lower so top HUD is clearly visible
 
-Captured piece boxes now fixed neatly in top-left and top-right corners
+• Captured piece boxes now fixed neatly in top-left and top-right corners
 
 ## 📅 Progress
 
@@ -93,8 +93,21 @@ Captured piece boxes now fixed neatly in top-left and top-right corners
 - Used appropriate symbols/letters (♙♘♗♖♕♔ for White and ♟♞♝♜♛♚ for Black).  
 - Placed pawns on the second and seventh rows.  
 - Positioned rooks, knights, bishops, queens, and kings on the first and last rows.  
-- Ensured both Black and White sides are mirrored correctly. 
+- Ensured both Black and White sides are mirrored correctly.
 
+### Day 4 – Implemented JavaScript Movement System
+- Click a piece → board shows available moves
+- Click destination → piece moves
+- Turn switching enabled
+
+### Day 5 – Capture Logic Working
+- Opponent pieces get removed
+- Stored visually in their respective captured-piece boxes
+
+### Day 6 – UI Polishing
+- Added high-contrast highlighting
+- Added modern gradient background
+- Organized board spacing so info text is clear
 
 ## 📷 Screenshot
 ---
