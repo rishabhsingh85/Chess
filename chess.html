@@ -4,92 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chess</title>
+
+    <link rel="stylesheet" href="chess.css">
     
 </head>
 <body>
+    <div id="gameArea" style="display:flex; gap:16px; align-items:flex-start; justify-content:center;">
 
- <table style="border: 1px solid black; border-collapse: collapse;">
-        <tr>
-        <td style="width: 80px; height: 80px; background-color: white;"> <img src="Images/elephant.png" alt="white rock" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"> <img src="Images/horse.png" alt="white horse" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"> <img src="Images/camel.png" alt="camel" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"> <img src="Images/queen.png" alt="queen" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"> <img src="Images/king.png" alt="king" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"> <img src="Images/camel.png" alt="camel" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"> <img src="Images/horse.png" alt="white horse" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"> <img src="Images/elephant.png" alt="white rock" height="80px" width="80px"></td>
-        </tr>
-        <tr>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="80px" width="80px"></td>
-        </tr>
-         <tr>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        </tr>
-        <tr>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-        </tr>
-        <tr>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"></td>
-        </tr>
-        <tr>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"></td>
-        </tr>
-        <tr>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="80px" width="80px"></td>
-        </tr>
-        <tr>
-            <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/welephant.png" alt="rock" height="80px" width="80px"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/whorse.png" alt="horse" height="80px" width="80px"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/wcamel.png" alt="camel" height="80px" width="80px"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/wqueen.png" alt="queen" height="80px" width="80px"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/wking.png" alt="king" height="80px" width="80px"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/wcamel.png" alt="horse" height="80px" width="80px"></td>
-            <td style="width: 80px; height: 80px; background-color: black;"><img src="Images/whorse.png" alt="horse" height="80px" width="80px"></td>
-            <td style="width: 80px; height: 80px; background-color: white;"><img src="Images/welephant.png" alt="rock" height="80px" width="80px"></td>
-        </tr>
+  <div id="blackCaptured" class="capturedColumn">
+    <h4>Black captured</h4>
+    <div class="capturedList" id="blackCapturedList"></div>
+  </div>
+
+ <table id="chessboard" style="border: 3px solid black; border-collapse: collapse;">
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: white;"> <img src="Images/elephant.png" alt="white rock" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"> <img src="Images/horse.png" alt="white horse" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"> <img src="Images/camel.png" alt="camel" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"> <img src="Images/queen.png" alt="queen" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"> <img src="Images/king.png" alt="king" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"> <img src="Images/camel.png" alt="camel" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"> <img src="Images/horse.png" alt="white horse" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"> <img src="Images/elephant.png" alt="white rock" height="70px" width="70px"></td>
+    </tr>
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/blackpawn.png" alt="pawn" height="70px" width="70px"></td>
+    </tr>
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+    </tr>
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+    </tr>
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+    </tr>
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"></td>
+    </tr>
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/wpawn.png" alt="pawn" height="70px" width="70px"></td>
+    </tr>
+    <tr>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/welephant.png" alt="rock" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/whorse.png" alt="horse" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/wcamel.png" alt="camel" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/wqueen.png" alt="queen" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/wking.png" alt="king" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/wcamel.png" alt="horse" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: black;"><img src="Images/whorse.png" alt="horse" height="70px" width="70px"></td>
+      <td style="width: 70px; height: 70px; background-color: white;"><img src="Images/welephant.png" alt="rock" height="70px" width="70px"></td>
+    </tr>
+  </table>
+
+  <div id="whiteCaptured" class="capturedColumn">
+    <h4>White captured</h4>
+    <div class="capturedList" id="whiteCapturedList"></div>
+  </div>
+
+</div>
         
- </table>
+ <script src="chess.js"></script>
 </body>
 </html>
+
